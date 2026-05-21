@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agendar cita</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-icons-1.13.1/bootstrap-icons.css " rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm ">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-heart-pulse-fill text-danger me-3"></i> Barberia  Tinta y Tijera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Barberia.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0 rounded-4" style="background-color: #1a1a1a; color: #ffffff;">
+
+                <div class="card-header text-center pt-4 border-0" style="background-color: #111111;">
+                    <i class="fas fa-scissors fa-2x mb-2" style="color: #d4af37;"></i>
+                    <h2 class="fw-bold text-uppercase m-0" style="font-family: 'Oswald', sans-serif; letter-spacing: 1px;">
+                        Reserva tu Turno
+                    </h2>
+                    <p class="text-white small mt-1">Asegura tu lugar con los mejores profesionales</p>
+                </div>
+
+                <div class="card-body p-4">
+                    <form action="#" method="POST">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold text-white small text-uppercase">Nombre Completo</label>
+                            <div class="input-group">
+                                <span class="input-group-text border-secondary bg-dark text-white"><i class="fas fa-user"></i></span>
+                                <input type="text" class="form-control bg-dark text-white border-secondary" id="nombre" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label fw-semibold text-muted small text-uppercase">Número de Teléfono</label>
+                            <div class="input-group">
+                                <span class="input-group-text border-secondary bg-dark text-white"><i class="fas fa-phone"></i></span>
+                                <input type="tel" class="form-control bg-dark text-white border-secondary" id="telefono" placeholder="Ej. 5512345678" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="servicio" class="form-label fw-semibold text-muted small text-uppercase">Selecciona el Servicio</label>
+                            <div class="input-group">
+                                <span class="input-group-text border-secondary bg-dark text-white"><i class="fas fa-cut"></i></span>
+                                <select class="form-select bg-dark text-white border-secondary" id="servicio" required>
+                                    <option value="" selected disabled>Elegir un servicio...</option>
+                                    <option value="corte">Corte de Cabello Tradicional - $25</option>
+                                    <option value="barba">Perfilado y Ritual de Barba - $20</option>
+                                    <option value="combo">Combo: Corte + Barba - $40</option>
+                                    <option value="color">Tinte / Camuflaje de Canas - $30</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="barbero" class="form-label fw-semibold text-muted small text-uppercase">Barbero de Preferencia</label>
+                            <div class="input-group">
+                                <span class="input-group-text border-secondary bg-dark text-white"><i class="fas fa-user-tie"></i></span>
+                                <select class="form-select bg-dark text-white border-secondary" id="barbero">
+                                    <option value="cualquiera" selected>Cualquier barbero disponible</option>
+                                    <option value="carlos">Carlos (Especialista en degradados)</option>
+                                    <option value="marcos">Marcos (Maestro navajero)</option>
+                                    <option value="alex">Alex (Estilos modernos / Mullets)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <label for="fecha" class="form-label fw-semibold text-muted small text-uppercase">Fecha</label>
+                                <input type="date" class="form-control bg-dark text-white border-secondary" id="fecha" required>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <label for="hora" class="form-label fw-semibold text-muted small text-uppercase">Hora</label>
+                                <input type="time" class="form-control bg-dark text-white border-secondary" id="hora" min="09:00" max="20:00" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn w-100 py-3 fw-bold text-uppercase border-0 shadow"
+                                style="background-color: #d4af37; color: #111111; letter-spacing: 1px; font-size: 1.1rem;">
+                            Confirmar Cita <i class="fas fa-chevron-right ms-2"></i>
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
